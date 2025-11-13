@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+To-Do List Web Application (React + TypeScript + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OVERVIEW
 
-Currently, two official plugins are available:
+This project is a fully interactive To-Do List web application built using React, TypeScript, and Tailwind CSS.
+It allows users to create, display, reorder, and manage tasks dynamically with drag-and-drop functionality.
+The app demonstrates modern React state management, DOM manipulation, and clean UI/UX design practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FEATURES
 
-## React Compiler
+Add Task
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can add new tasks using an input field and “Add” button.
 
-## Expanding the ESLint configuration
+Blank inputs are not accepted.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Display Tasks
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Tasks are displayed in a vertical list with clear separation and neat styling.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Delete Task
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Each task includes a delete button (×) to remove it from the list instantly.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Reorder Tasks (Drag & Drop)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tasks are fully draggable and droppable for reordering.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Swapping positions updates the list instantly with no duplicates or gaps.
+
+Visual feedback indicates the current drag and drop target.
+
+Extended Features (Bonus)
+
+Persistent Storage
+
+All tasks are automatically saved to the browser’s localStorage.
+
+When the page reloads, tasks are restored automatically.
+
+Task Completion
+
+Each task includes a checkbox.
+
+Completed tasks are visually marked with a strikethrough.
+
+Categories/Sections
+
+Tasks can be categorized under sections such as “Today” and “Tomorrow”.
+
+Each category is managed separately for better organization.
+
+Responsive Design
+
+The UI adjusts smoothly for mobile, tablet, and desktop screens.
+
+Navigation Bar and Footer
+
+A fixed top navigation bar includes the To-Do logo and app title.
+
+A simple footer is displayed at the bottom of the page.
+
+TECHNOLOGIES USED
+
+
+Frontend	React (with TypeScript)
+Styling	Tailwind CSS
+State Management	React useState Hooks
+Persistence	localStorage API
+Build Tool	Vite / Create React App
+Installation and Setup
+1. Clone the Repository
+git clone https://github.com/yourusername/todo-react-ts.git
+cd todo-react-ts
+
+
+Project Structure
+src/
+│
+├── components/
+│   ├── TodoItem.tsx       # Individual task component
+│   ├── TodoList.tsx       # Renders and manages drag-and-drop task list
+│
+├── App.tsx                # Main app logic and UI
+├── index.tsx              # React DOM entry point
+├── index.css              # Tailwind base styles
+│
+└── assets/
+    └── logo.png           # To-Do App logo (optional)
+![todo screenshoot](hhshshh)
