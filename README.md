@@ -2,11 +2,14 @@ To-Do List Web Application (React + TypeScript + Tailwind CSS)
 
 OVERVIEW
 
+
 This project is a fully interactive To-Do List web application built using React, TypeScript, and Tailwind CSS.
 It allows users to create, display, reorder, and manage tasks dynamically with drag-and-drop functionality.
 The app demonstrates modern React state management, DOM manipulation, and clean UI/UX design practices.
 
+
 FEATURES
+
 
 Add Task
 
@@ -60,7 +63,9 @@ A fixed top navigation bar includes the To-Do logo and app title.
 
 A simple footer is displayed at the bottom of the page.
 
+
 TECHNOLOGIES USED
+
 
 
 Frontend	React (with TypeScript)
@@ -74,7 +79,9 @@ git clone https://github.com/yourusername/todo-react-ts.git
 cd todo-react-ts
 
 
-Project Structure
+PROJECT STRUCTURE
+
+
 src/
 │
 ├── components/
@@ -87,4 +94,4 @@ src/
 │
 └── assets/
     └── logo.png           # To-Do App logo (optional)
-![todo screenshoot](hhshshh)
+![todo screenshoot](https://github.com/buyinzadiana-bot/TO-DO-LIST-TYPESCRIPT-1/blob/e7910c10893f07028adde3d9bd483758df072a61/Screenshot%202025-11-13%20at%2015.01.19.png)
