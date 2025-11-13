@@ -74,9 +74,7 @@ State Management	React useState Hooks
 Persistence	localStorage API
 Build Tool	Vite / Create React App
 Installation and Setup
-1. Clone the Repository
-git clone https://github.com/yourusername/todo-react-ts.git
-cd todo-react-ts
+
 
 
 PROJECT STRUCTURE
